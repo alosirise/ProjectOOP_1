@@ -48,7 +48,6 @@ abstract class abChoose7 {
      	int x,d,count;      
         do{
      	    Scanner ns1 = new Scanner(System.in);
-     	    //System.out.println("");
      	    sc1 = ns1.nextLine();//รับค่าเข้ามาเป็น
      	    check="true";
             count=1;

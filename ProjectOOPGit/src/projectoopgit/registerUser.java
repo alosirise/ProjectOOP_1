@@ -88,7 +88,7 @@ class registerUser extends Choose7 implements press,user{
                     while(n>0){
                             if(this.sc4.equals(idus1[n])&&this.sc5.equals(pwus1[n])){				
                                 System.out.println("\n-------------------Login Success------------------");                               
-                                choose7();//press1234();
+                                choose7();
                             }
                             n--;
                     }              
