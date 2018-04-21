@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package projectoopgit;
-
 import java.util.Scanner;
 import static projectoopgit.abChoose7.ALEART;
-
-
 class JunkMail extends Choose7{
        public void register(){}
        public void JunkMail(){
@@ -61,9 +53,7 @@ class JunkMail extends Choose7{
                     case "3":choose7(); break;
                     default:System.out.println("------------------Please enter only 1-3-----------------"); JunkMail();
                 }
-    
-    }
-       
+       }  
        public void MessageJMail(){
             System.out.print("\nNumber title :");
             int rrm =stringcal();
@@ -86,8 +76,7 @@ class JunkMail extends Choose7{
                              }
             System.out.println("==================================================");                
             JunkMail();
-       }  
-       
+       }   
        public void DeleteJMail(){
            Scanner ch = new Scanner(System.in);
            System.out.println("");

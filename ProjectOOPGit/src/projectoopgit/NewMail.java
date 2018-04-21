@@ -1,16 +1,10 @@
-
 package projectoopgit;
-
 import java.util.Date;
 import java.util.Scanner;
 import static projectoopgit.abChoose7.NM;
-
-
-
 class NewMail extends Choose7{
        Scanner nm = new Scanner(System.in); 
-       String save;
-           
+       String save;      
        public void register(){}
        public void SelectNewmail(){
             Scanner s = new Scanner(System.in);    
@@ -31,8 +25,7 @@ class NewMail extends Choose7{
                           choose7(); break;              
                 default :System.out.println("--------------Please Enter 1-3 again--------------");SelectNewmail();
                 }
-      }
-        
+       }
        public void EnterMessage(){               
             Date currentDate = new Date();                         
             System.out.print("\nYour Heading : ");
@@ -52,7 +45,6 @@ class NewMail extends Choose7{
                             y++;
                         }
                 }
-
             System.out.println("\n==================================================");
             System.out.println("\nTITLE :                     "+super.NM[n][c3]);
             System.out.println("MESSAGE");
@@ -61,11 +53,9 @@ class NewMail extends Choose7{
                      else{  System.out.println("             "+NM2[n][c3][c4]);
                      }            
                 }                 
-
             System.out.println("==================================================");    
             NewMail();
-       }    
-       
+       }       
        public void NewMail(){
             System.out.println("Do you want to save in to recordlist ?");
             System.out.println("Press[1] to Save | Press[2] to Rewrite");
@@ -96,10 +86,8 @@ class NewMail extends Choose7{
                                 SelectNewmail();break;
                        default :System.out.println("-------Please Only 1-3------"); NewMail();
                 } 
-       }
-      
-       public void SendingMail(){
-                               
+       }     
+       public void SendingMail(){                              
             System.out.println("Do you want to Send ?");
             System.out.println("Press[1] to Send Mail | Press[2] to Back");
             System.out.print(">");
@@ -117,20 +105,16 @@ class NewMail extends Choose7{
                         System.out.println("> username :"+CT[n][z]);                           
                      }
                   }
-            System.out.println("--------------------------------------------------");
-               
-            t=getAllRegister();
-          
+            System.out.println("--------------------------------------------------");          
+            t=getAllRegister();        
             System.out.print("\nEnter name Receiver : ");
-                            String name = nm.nextLine();
-                               
+                            String name = nm.nextLine();                          
                 while(t>0){			                
                           if(name.equals(nameUser[t])){                       
                                     if(name.equals(nameUser[n])){
                                         System.out.println("\n---------You can not Send to your Account---------\n");
                                         SendingMail();
-                                    }
-                                                                                                                                                      
+                                    }                                                                                                                                          
                                     CT[n][c5]=nameUser[t]; //add in to contactlist
                                     c5++;
                                     CT[t][c5]=nameUser[n];
@@ -144,9 +128,7 @@ class NewMail extends Choose7{
                                                 test2="true";
                                               j++;                                     
                                           }                           
-                                    }
-                              
-                                                                  
+                                    }                                                
                                     if(test2.equals("true")){
                                         JM[t][j]=NM[n][c3]; 
                                         NM[n][c3]=null;
@@ -166,25 +148,17 @@ class NewMail extends Choose7{
                                          RM2[t][c1][i]=NM2[n][c3][i];
                                        }
                                     }
-  
-                              c1++; c2++; c3++; c4++; 
-                             
-                              System.out.println("\n-------------------SEND SUCCESS !!----------------");
-                               
+                              c1++; c2++; c3++; c4++;                       
+                              System.out.println("\n-------------------SEND SUCCESS !!----------------");                          
                               ALEART[t][2]="[You have new contact] in History List!";
                               super.choose7();
-
                           }
                       t--;  
-                }
-	
+                }	
             System.out.println("\n--------------Din't Find Name Reciever------------");	
-            System.out.println("------------------Please Enter again--------------\n");	
-            
+            System.out.println("------------------Please Enter again--------------\n");	           
             SendingMail();
-        }
-      
-           
+        }         
        public void Recordlist(){
             System.out.println("\n==================================================");
             System.out.println("-------------------- Record List------------------");
@@ -203,7 +177,6 @@ class NewMail extends Choose7{
                         }
                     }  
                 }
-
                 for(int z=0 ;z<s; z++){
                     if(SV[n][z] == null){z++;}
                     else{
@@ -233,8 +206,7 @@ class NewMail extends Choose7{
                     case "3":SelectNewmail(); break;
                     default:System.out.println("------------------Please enter only 1-3-----------------"); Recordlist();
                 }
-      }
-       
+      }    
        public void MessageRecord(){
             System.out.print("\nNumber title :");
             int rrm =stringcal();
@@ -249,8 +221,7 @@ class NewMail extends Choose7{
             
             else{ EditMesssage(rrm);
             }
-       }
-       
+       }     
        public void EditMesssage(int rrm){
             System.out.println("\n==================================================");
             System.out.println("\n[TITLE  ]                     " +SV[n][rrm-1]); 
@@ -269,9 +240,7 @@ class NewMail extends Choose7{
             System.out.print(">");
             String edit = sc.nextLine();
             switch(edit){
-               case "1":
-                   
-                        System.out.println("\n---------Recent Contact ----------");
+               case "1":System.out.println("\n---------Recent Contact ----------");
                             for(int z=0 ;z<c5;  z++){ 
                                  if(CT[n][z] == null){z++;}
                                  else{
@@ -383,8 +352,7 @@ class NewMail extends Choose7{
                default:System.out.println("--------------Plese enter only 1-3--------------");EditMesssage(rrm);
                   
             }      
-        }
-       
+        } 
        public void DeleteRecord(){
             Scanner ch = new Scanner(System.in);
             System.out.println("");

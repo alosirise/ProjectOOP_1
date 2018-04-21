@@ -1,12 +1,6 @@
-
-
 package projectoopgit;
-
 import java.util.Scanner;
 import static projectoopgit.abChoose7.b;
-
-
-
 class BinMail extends Choose7{
        public void register(){}
        public void Bin(){
@@ -26,7 +20,6 @@ class BinMail extends Choose7{
                         }
                     }  
                 }
-
                 for(int z=0 ;z<b; z++){
                      if(BIN[n][z] == null){z++;}
                      else{
@@ -57,8 +50,7 @@ class BinMail extends Choose7{
                     case "4":choose7(); break;
                     default:System.out.println("------------------Please enter only 1-4-----------------");  Bin();
                 }
-    }   
-              
+       }             
        public void MessageBin(){
             System.out.print("\nNumber title :");
             int rrm =stringcal();
@@ -82,10 +74,8 @@ class BinMail extends Choose7{
                      }
                 }
             System.out.println("==================================================");                
-            Bin();
-      
-       }
-       
+            Bin();  
+       }    
        public void DeleteBin(){
             Scanner ch = new Scanner(System.in);
             System.out.println("");
@@ -107,8 +97,7 @@ class BinMail extends Choose7{
                     case "NO" :Bin(); break;
                     default : System.out.println("PLESE ENTER ONLY \"YES\" or \"No\"");DeleteBin();     
                 }
-       }
-       
+       } 
        public void RestoreBin(){
             Scanner sc = new Scanner(System.in);
             Scanner ch = new Scanner(System.in);

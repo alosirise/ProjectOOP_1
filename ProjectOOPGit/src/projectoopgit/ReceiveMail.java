@@ -1,10 +1,6 @@
-
 package projectoopgit;
-
 import java.util.Scanner;
 import static projectoopgit.abChoose7.ALEART;
-
-
 class ReceiveMail extends Choose7{
        public void register(){}      
        public void ReceiveMail(){
@@ -26,7 +22,6 @@ class ReceiveMail extends Choose7{
                          }
                      }
                 }     
-
                 for(int z=0 ;z<=c1; z++){     //print
                     if(RM[n][z] == null){z++;}
                     else{
@@ -36,17 +31,16 @@ class ReceiveMail extends Choose7{
                 Scanner sc = new Scanner(System.in);
                 System.out.println("");
                 if(RM[n][0]==null){
-                 System.out.println("-----------EMPTY-------------");
-                 System.out.println("");
-                 System.out.println("Press[3] to Back");
-                 System.out.print(">");
-                 String emptyR = sc.nextLine();
-                 switch(emptyR){
-                     case "3":choose7();break;
-                     default :System.out.println("-------------------Please enter only 3------------------"); ReceiveMail();break;
-                 }
+                    System.out.println("-----------EMPTY-------------");
+                    System.out.println("");
+                    System.out.println("Press[3] to Back");
+                    System.out.print(">");
+                    String emptyR = sc.nextLine();
+                    switch(emptyR){
+                        case "3":choose7();break;
+                        default :System.out.println("-------------------Please enter only 3------------------"); ReceiveMail();break;
+                    }
                 }
-
             System.out.println("Press[1] to Read Mail | Press[2] to Delete Mail");
             System.out.println("Press[3] to Back");
             System.out.print(">");
@@ -56,10 +50,8 @@ class ReceiveMail extends Choose7{
                     case "2":DeleteRMail(); break;
                     case "3":choose7(); break;
                     default:System.out.println("-------------------Please enter only 1-3------------------"); ReceiveMail();break;
-                }
-          
+                }        
        }      
-       
        public void MessageRMail(){
             System.out.print("\nNumber title :");
             int rrm =stringcal();
@@ -82,8 +74,7 @@ class ReceiveMail extends Choose7{
                 }
             System.out.println("==================================================");                
             ReceiveMail();
-       } 
-      
+       }   
        public void DeleteRMail(){
            Scanner ch = new Scanner(System.in);
            System.out.println("");

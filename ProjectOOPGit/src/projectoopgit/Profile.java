@@ -1,10 +1,6 @@
-
 package projectoopgit;
-
 import java.util.Scanner;
 import static projectoopgit.abChoose7.PF;
-
-
 class Profile extends Choose7{
        public void register(){}
        public void profile(){

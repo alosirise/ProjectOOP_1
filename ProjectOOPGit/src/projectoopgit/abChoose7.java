@@ -1,28 +1,18 @@
-
-
 package projectoopgit;
-
 import java.util.Scanner;
-
 abstract class abChoose7 {
-    
-     abstract public void register(); 
-     
+    abstract public void register();     
 //     abChoose7(){
 //         System.out.println("---------------");
 //     }
      private static int r; 
      public static int r1,n,s,t,b,c1,c2,c3,c4,c5,c6,y,j; // r=register s =save  t=sendingmail y=countMessage  
-     
-     
      public void IncreaseRegister(){
      this.r++;
      }
-     
      public int getAllRegister(){
      return r;
      }
-   
      public static int  [][]countS =new int[100][1];
      public static String []idus1 = new String[100];    //r1
      public static String []pwus1 = new String[100];    //r1  

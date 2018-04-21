@@ -1,9 +1,6 @@
-
 package projectoopgit;
-
 import java.util.Date;
 import java.util.Scanner;
-
 class registerUser extends Choose7 implements press,user{
       private String sc4,sc5;   
       private String time;   

@@ -1,11 +1,6 @@
-
-
 package projectoopgit;
-
 import java.util.Scanner;
 import static projectoopgit.abChoose7.ALEART;
-
-
 class Contact extends Choose7{
        public void register(){}
        public void Contactlist(){
@@ -34,7 +29,6 @@ class Contact extends Choose7{
                      }
                  }
 
-
                 if(CT[n][0]==null){
                   System.out.println("\n             -CONTACT HISTORY [EMPLY]\n");
                   System.out.println("--------------------------------------------------");
@@ -42,10 +36,8 @@ class Contact extends Choose7{
                 }
                         
             System.out.println("\n--------------------------------------------------");   
-            SeeProfile();
-       
-       }
-       
+            SeeProfile();  
+       }  
        public void SeeProfile(){
             Scanner sc = new Scanner(System.in); 
             String see1; 

@@ -1,9 +1,6 @@
-
 package projectoopgit;
-
 import java.util.Scanner;
 import static projectoopgit.abChoose7.c2;
-
 class SendedMail extends Choose7 {  
        public void register(){}
        public void SendedMail(){
@@ -24,7 +21,6 @@ class SendedMail extends Choose7 {
                          }
                      }  
                 }   
-
                 for(int z=0 ;z<=c2; z++){
                      if(SM[n][z] == null){z++;}
                      else{
@@ -43,8 +39,7 @@ class SendedMail extends Choose7 {
                      case "3":choose7();break;
                      default :System.out.println("-------------------Please enter only 3------------------"); SendedMail();break;
                    }
-                }
-                
+                }             
             System.out.println("Press[1] to Read Mail | Press[2] to Delete Mail");
             System.out.println("Press[3] to Back");
             System.out.print(">");
@@ -55,8 +50,7 @@ class SendedMail extends Choose7 {
                      case "3":choose7(); break;
                      default:System.out.println("------------------Please enter only 1-3-----------------");  SendedMail();
                 }
-       }
-       
+       }       
        public void MessageSMail(){
             System.out.print("\nNumber title :");
             int rrm =stringcal();
@@ -79,8 +73,7 @@ class SendedMail extends Choose7 {
                     }
             System.out.println("==================================================");                
             SendedMail();
-       }
-       
+       }  
        public void DeleteSMail(){
             Scanner ch = new Scanner(System.in);
             System.out.println("");
