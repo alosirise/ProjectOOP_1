@@ -21,20 +21,17 @@ class Contact extends Choose7{
                        }
                    }
                 }     
-
                 for(int z=0 ;z<c5; z++){     //print
                     if(CT[n][z] == null){z++;}
                     else{
                     System.out.println("\"> USER : "+(z+1)+"]   >"+CT[n][z]);       
                      }
                  }
-
                 if(CT[n][0]==null){
                   System.out.println("\n             -CONTACT HISTORY [EMPLY]\n");
                   System.out.println("--------------------------------------------------");
                   SeeProfile();                
-                }
-                        
+                }                       
             System.out.println("\n--------------------------------------------------");   
             SeeProfile();  
        }  

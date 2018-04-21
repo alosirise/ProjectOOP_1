@@ -13,8 +13,7 @@ class registerUser extends Choose7 implements press,user{
             this.time ="It's time : "+(currentDate)+"\n";  
             System.out.println(message);
             System.out.println(time);
-       }
-     															
+       }  															
         public void press(){	
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--------------------------------------------------");
@@ -28,8 +27,7 @@ class registerUser extends Choose7 implements press,user{
 			default  :System.out.println("\n======Enter only 1-2 number======\n----Please Select again----\n"); 
                                   press();break;						
 		}
-	}
-        
+	}      
         public void register(){
 		Scanner sc = new Scanner(System.in);
                 System.out.println("==================================================");
@@ -75,8 +73,7 @@ class registerUser extends Choose7 implements press,user{
 			System.out.println(" ---ID or Password Wrong! Please Register again ---");
 			press();
                 }
-	}
-								
+	}								
 	public void user(){
 		Scanner sc = new Scanner(System.in);
 		n=getAllRegister();
@@ -94,8 +91,7 @@ class registerUser extends Choose7 implements press,user{
                                 choose7();//press1234();
                             }
                             n--;
-                    }
-                
+                    }              
                 System.out.println("\n---------------------Login Fail-------------------");	
                 System.out.println("---ID or Password Wrong!  Please login  again---\n");																														
                 press();
