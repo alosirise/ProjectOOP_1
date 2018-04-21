@@ -2,9 +2,6 @@ package projectoopgit;
 import java.util.Scanner;
 abstract class abChoose7 {
     abstract public void register();     
-//     abChoose7(){
-//         System.out.println("---------------");
-//     }
      private static int r; 
      public static int r1,n,s,t,b,c1,c2,c3,c4,c5,c6,y,j; // r=register s =save  t=sendingmail y=countMessage  
      public void IncreaseRegister(){
