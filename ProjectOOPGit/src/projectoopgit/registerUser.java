@@ -6,7 +6,7 @@ class registerUser extends Choose7 implements press,user{
       private String time;   
       
         registerUser(){       
-            this("\n=================== WELCOME TO PROJECT D-MAIL======================");          
+            this("\n  =================== PROJECT D-MAIL ======================\n");          
         }         
         registerUser(String message){  
             Date currentDate = new Date();    

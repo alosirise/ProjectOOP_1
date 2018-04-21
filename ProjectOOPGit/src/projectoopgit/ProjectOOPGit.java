@@ -9,7 +9,8 @@ import java.util.*;
 
 class Main{
     public static void main(String[] args) {
-        registerUser a = new registerUser();
-        a.press();
+        print a = new print();
+        registerUser b = new registerUser();
+        b.press();
     }
 }
